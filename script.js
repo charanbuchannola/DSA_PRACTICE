@@ -184,17 +184,32 @@
 // );
 
 // strong number
+// let number = Number(prompt("enter the number"));
+// let copy = number;
+// let sum = 0;
+// while (number > 0) {
+//   rem = number % 10;
+//   let fact = 1;
+//   for (let i = 1; i <= rem; i++) {
+//     fact *= i;
+//   }
+//   sum += fact;
+//   number = Math.floor(number / 10);
+// }
+// console.log(sum == copy ? "strong number" : "not a strong number");
 
-let number = Number(prompt("enter the number"));
-let copy = number;
-let sum = 0;
-while (number > 0) {
-  rem = number % 10;
-  let fact = 1;
-  for (let i = 1; i <= rem; i++) {
-    fact *= i;
-  }
-  sum += fact;
-  number = Math.floor(number / 10);
+// automorphic number
+
+let n = Number(prompt("enter the number"));
+let sqt = n * n;
+let copy = n;
+
+let count = 0;
+while (n > 0) {
+  count++;
+  n = Math.floor(n / 10);
 }
-console.log(sum == number ? "strong number" : "not a strong number");
+
+console.log(
+  copy == sqt % Math.pow(10, count) ? "automorphic number" : "not automorphic"
+); 
