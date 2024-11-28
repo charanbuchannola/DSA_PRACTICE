@@ -168,18 +168,33 @@
 
 // console.log(`reverse is ${reverse}`);
 
-
 // pallindromic or not
+// let number = Number(prompt("enter the number"));
+// let copy = number;
+// let reverse = 0;
+
+// while (number > 0) {
+//   let rem = number % 10;
+//   reverse = reverse * 10 + rem;
+//   number = Math.floor(number / 10);
+// }
+
+// console.log(
+//   copy == reverse ? "pallindromic number" : "not a pallindromic number"
+// );
+
+// strong number
+
 let number = Number(prompt("enter the number"));
 let copy = number;
-let reverse = 0;
-
+let sum = 0;
 while (number > 0) {
-  let rem = number % 10;
-  reverse = reverse * 10 + rem;
+  rem = number % 10;
+  let fact = 1;
+  for (let i = 1; i <= rem; i++) {
+    fact *= i;
+  }
+  sum += fact;
   number = Math.floor(number / 10);
 }
-
-console.log(
-  copy == reverse ? "pallindromic number" : "not a pallindromic number"
-);
+console.log(sum == number ? "strong number" : "not a strong number");
