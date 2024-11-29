@@ -200,16 +200,84 @@
 
 // automorphic number
 
-let n = Number(prompt("enter the number"));
-let sqt = n * n;
-let copy = n;
+// let n = Number(prompt("enter the number"));
+// let sqt = n * n;
+// let copy = n;
 
-let count = 0;
-while (n > 0) {
-  count++;
-  n = Math.floor(n / 10);
+// let count = 0;
+// while (n > 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+
+// console.log(
+//   copy == sqt % Math.pow(10, count) ? "automorphic number" : "not automorphic"
+// );
+
+// make it single digit
+
+// let number = Number(prompt("enter the number"));
+
+// let sum = 0;
+
+// while (number > 0 || sum > 9) {
+//   if (n == 0) {
+//     n = sum;
+//     sum = 0;
+//   }
+
+//   sum = sum + rem;
+//   n = Math.floor(n / 10);
+// }
+
+// console.log(n);
+
+//fibonacci series
+// fibonacci series
+
+// fibonacci series
+
+// let n = Number(prompt("enter the number of terms"));
+
+// let a = 0;
+// let b = 1;
+// let sum = 0;
+// console.log("Fibonacci series:");
+// console.log(a);
+
+// for (let i = 1; i < n; i++) {
+//   let c = a + b;
+//   console.log(c);
+//   a = b;
+//   b = c;
+//   sum += c;
+// }
+
+// calculator Program
+
+let num1 = Number(prompt("Enter first number"));
+let num2 = Number(prompt("Enter second number"));
+let operator = prompt("Enter operator (+, -, *, /)");
+let result;
+switch (operator) {
+  case "+":
+    result = num1 + num2;
+    break;
+  case "-":
+    result = num1 - num2;
+    break;
+  case "*":
+    result = num1 * num2;
+    break;
+  case "/":
+    if (num2 == 0) {
+      console.log("Error: Division by zero");
+      break;
+    }
+    result = num1 / num2;
+    break;
+  default:
+    console.log("Error: Invalid operator");
+    break;
 }
-
-console.log(
-  copy == sqt % Math.pow(10, count) ? "automorphic number" : "not automorphic"
-); 
+console.log(`${num1} ${operator} ${num2} = ${result}`);
