@@ -255,29 +255,110 @@
 
 // calculator Program
 
-let num1 = Number(prompt("Enter first number"));
-let num2 = Number(prompt("Enter second number"));
-let operator = prompt("Enter operator (+, -, *, /)");
-let result;
-switch (operator) {
-  case "+":
-    result = num1 + num2;
-    break;
-  case "-":
-    result = num1 - num2;
-    break;
-  case "*":
-    result = num1 * num2;
-    break;
-  case "/":
-    if (num2 == 0) {
-      console.log("Error: Division by zero");
-      break;
-    }
-    result = num1 / num2;
-    break;
-  default:
-    console.log("Error: Invalid operator");
-    break;
+// let num1 = Number(prompt("Enter first number"));
+// let num2 = Number(prompt("Enter second number"));
+// let operator = prompt("Enter operator (+, -, *, /)");
+// let result;
+// switch (operator) {
+//   case "+":
+//     result = num1 + num2;
+//     break;
+//   case "-":
+//     result = num1 - num2;
+//     break;
+//   case "*":
+//     result = num1 * num2;
+//     break;
+//   case "/":
+//     if (num2 == 0) {
+//       console.log("Error: Division by zero");
+//       break;
+//     }
+//     result = num1 / num2;
+//     break;
+//   default:
+//     console.log("Error: Invalid operator");
+//     break;
+// }
+// console.log(`${num1} ${operator} ${num2} = ${result}`);
+
+// // remove duplicates from sorted array
+
+// let arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5];
+
+// let uniqueArr = [...new Set(arr)];
+
+// console.log("uniqueArr: " + uniqueArr);
+
+// // guess the number
+
+// let number = parseInt(prompt("enter the number between 0 and 100"))
+
+// var random = Math.floor(Math.random());
+
+// reverse a string
+
+// let str = prompt("Enter a string");
+// let reversed = str.split("").reverse().join("");
+// console.log(reversed);
+
+// pallindrome a string
+
+// let string = prompt("Enter a string");
+// let Reversed = str.split("").reverse().join("");
+
+// if (str === reversed) {
+//   console.log("The string is a palindrome");
+// } else {
+//   console.log("The string is not a palindrome");
+// }
+
+// let i = prompt("Enter a number");
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// // max number
+// let arr = [1, 5, 3, 9];
+
+// let max = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// console.log("max: " + max);
+
+// remove duplicates from an array
+
+// let arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5];
+
+// let i = 0;
+
+// for (let j = 1; j < arr.length; j++) {
+//   if (arr[i] !== arr[j]) {
+//     i++;
+//     arr[i] = arr[j];
+//   }
+// }
+// console.log(arr);
+
+//sum of an array
+
+let arr = [1, 2, 3, 4, 5];
+
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
 }
-console.log(`${num1} ${operator} ${num2} = ${result}`);
