@@ -366,14 +366,30 @@
 
 // maximum element from array
 
+// let arr = [20, 40, 50, 8, 12, 68, 43];
+
+// let max = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+
+// console.log("Maximum element: " + max);
+
+//second max element in an array
+
 let arr = [20, 40, 50, 8, 12, 68, 43];
 
 let max = arr[0];
+let secondMax = -Infinity;
 
 for (let i = 1; i < arr.length; i++) {
   if (arr[i] > max) {
+    secondMax = max;
     max = arr[i];
+  } else if (arr[i] > secondMax && arr[i] < max) {
+    secondMax = arr[i];
   }
 }
-
-console.log("Maximum element: " + max);
