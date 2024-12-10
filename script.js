@@ -355,10 +355,25 @@
 
 //sum of an array
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-let sum = 0;
+// let sum = 0;
 
-for (let i = 0; i < arr.length; i++) {
-  sum += arr[i];
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum);
+
+// maximum element from array
+
+let arr = [20, 40, 50, 8, 12, 68, 43];
+
+let max = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
+  }
 }
+
+console.log("Maximum element: " + max);
